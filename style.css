@@ -1,3 +1,10 @@
+/* リセットCSS忘れ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* header要素 */
 .header {
   width: 100%;
@@ -13,19 +20,31 @@
 }
 
 /* main要素 */
+/* 子要素を並べるためにカラーと高さは必要ない */
 .main {
   width: 960px;
-  height: 1400px;
-  background-color: palegreen;
   display: flex;
   justify-content: center;
   margin: 0 auto;
 }
 
-.box {
+
+.sidebar-left {
+  width: 230px;
+  height: 1400px;
+  background-color: lightgreen;
+}
+
+.blog {
   width: 500px;
   height: 1400px;
   background-color: limegreen;
+}
+
+.sidebar-right {
+  width: 230px;
+  height: 1400px;
+  background-color: lightgreen;
 }
 
 /* footer要素 */
